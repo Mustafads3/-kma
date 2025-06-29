@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mustafa ile çıkar mısınız?</title>
+  <style>
+    body {
+      font-family: 'Comic Sans MS', cursive;
+      text-align: center;
+      background-color: #e0f7fa;
+      padding-top: 80px;
+      overflow: hidden;
+    }
+    h1 {
+      font-size: 26px;
+      margin-bottom: 40px;
+      color: #006064;
+    }
+    button {
+      padding: 15px 30px;
+      font-size: 18px;
+      border-radius: 15px;
+      border: none;
+      margin: 10px;
+      cursor: pointer;
+      position: relative;
+      z-index: 2;
+    }
+    #yesBtn {
+      background-color: #26a69a;
+      color: white;
+    }
+    #noBtn {
+      background-color: #ef5350;
+      color: white;
+      position: absolute;
+    }
+  </style>
+</head>
+<body>
+  <h1>Mustafa ile çıkmak ister misiniz? 💖</h1>
+  <button id="yesBtn" onclick="evet()">Evet</button>
+  <button id="noBtn" ontouchstart="kac()" onmouseover="kac()">Hayır</button>
+
+  <script>
+    function evet() {
+      // Yönlendirme yapılacak video
+      window.location.href = "https://www.youtube.com/watch?v=novd_vjOSns";
+    }
+
+    function kac() {
+      const btn = document.getElementById("noBtn");
+      const maxX = window
